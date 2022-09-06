@@ -191,6 +191,9 @@ margin-bottom: 18%;
   #name{
     font-size: 52px;
   }
+  #desktop_view_main_content{
+    display: none !important;
+  }
   #show_case_mobile{
     display: block !important;
   }
