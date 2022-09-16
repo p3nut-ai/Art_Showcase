@@ -5,53 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- CSS only -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Mobile View header -->
+    <div class="row">
+    <div class="col-xs-12">
+
     <div id="header-container" class="mobile-view">
       <div class="row">
         <div class="col-xs-12">
           <div id="name-section-container">
-            <p id="name">Jonathan Jaquias</p>
             <p id="section">BSCS 1A</p>
+            <p id="name">Jonathan Jaquias</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
     <!-- Desktop View header -->
   <div class="container desktop-view">
     <div id="header-container">
       <div class="row">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-5 col-xs-12">
           <div id="menu-container">
-            <ul>
-              <a href="#desktop_view_main_content">
-                <li style="--i:5;">Scribbling Soul</li>
-              </a>
-              <a href="#">
-                  <li style="--i:4;">-</li>
-              </a>
-
-              <a href="#">
-                  <li style="--i:3;">-</li>
-              </a>
-
-              <a href="#">
-                <li style="--i:2;">-</li>
-              </a>
-              <a href="#">
-                  <li style="--i:1;">-</li>
-              </a>
-            </ul>
+            <p id="name">Jonathan Jaquias</p>
+            <p id="section">BSCS 1A</p>
           </div>
 
         </div>
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-7 col-xs-12">
           <div id="name-section-container">
-            <p id="name">Jonathan Jaquias</p>
-            <p id="section">BSCS 1A</p>
+            <p class="text-right">
+              <img src="https://demo.curlythemes.com/art-gallery-wp/wp-content/uploads/sites/24/2017/09/thethinker.jpg" style="width: 100%;margin-left: 514px;height: 100%;">
+            </p>
           </div>
         </div>
       </div>
@@ -59,36 +49,40 @@
   </div>
 
     <!-- Desktop Main Content -->
-    <div class="container">
+    <div class="works_container">
+      <div class="container">
       <div class="show_case" id="desktop_view_main_content">
         <div class="row">
           <div class="col-md-12 col-xs-12">
             <h6 class="text-center" id="activity_label">ACTIVITIES</h6>
+            <p class="text-center" style="color:black;  padding-bottom: 150px;">(Click the pictures)</p>
           </div>
 
-          <div class="col-md-6 col-xs-12">
+
+
+          <div class="col-md-4 col-xs-12">
             <div data-aos="fade-right">
               <div class="art_container">
-                <img src="art.jpg" alt="">
+                <a href="projects/project1.html" class="projects_a">
+                  <img src="art.jpg">
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xs-12">
-            <div data-aos="fade-left">
-                <div class="art_desc_container">
-                  <h6 class="art_title">Scribbling Soul</h6>
-                  <p style="font-size: 20px;">What image is formed by your scribble? <br>- A whale.</p>
-                  <br>
-                  <p style="font-size: 20px;">How is this image related to you? <br>- Whales need to consume more in order for them to survive. For example, they need to eat more to sustain their bodies or their needs. And I find it similar to my current mindset because I want to dream BIG and work harder. More, and I don't want to be content with a small dream or life. I want to keep on pushing more and more in order to have my own dream life.</p>
-                  <br>
-                  <p style="font-size: 20px;">How did you express your creativity in this activity? <br>-I expressed my creativity through maximizing my materials or by using just a pencil and 1 color.</p>
-                  <p style="font-size: 20px;">How did you express your imagination in this activity? <br>-I expressed my imagination through I expressed my creativity through pointing out the shape of the whale in the scribble.</p>
-                  <p style="font-size: 20px;">September 06, 2022 <br> 03:57pm</p>
-                </div>
+
+          <div class="col-md-4 col-xs-12">
+            <div data-aos="fade-right">
+              <div class="art_container">
+                <a href="projects/project2.html" class="projects_a">
+                  <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" style="height: 555px;object-fit: initial;">
+                </a>
               </div>
+            </div>
           </div>
+
         </div>
       </div>
+    </div>
     </div>
 
     <!-- mobile view main content -->
@@ -99,24 +93,51 @@
             <h6 class="text-center view_activity_label_mobile" id="activity_label">ACTIVITIES</h6>
           </div>
 
-          <div class="col-md-6 col-xs-12">
+          <div class="col-md-12 col-xs-12">
             <div data-aos="fade-right">
               <div class="art_container">
                 <img src="art.jpg" alt="">
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-xs-12">
+          <div class="col-xs-12">
             <div data-aos="fade-left">
                 <div class="art_desc_container">
                   <h6 class="art_title">Scribbling Soul</h6>
-                  <p style="font-size: 20px;">What image is formed by your scribble? <br>- A whale.</p>
+                  <p style="font-size:20px; color:black;">What image is formed by your scribble? <br>- A whale.</p>
                   <br>
-                  <p style="font-size: 20px;">How is this image related to you? <br>- Whales need to consume more in order for them to survive. For example, they need to eat more to sustain their bodies or their needs. And I find it similar to my current mindset because I want to dream BIG and work harder. More, and I don't want to be content with a small dream or life. I want to keep on pushing more and more in order to have my own dream life.</p>
+                  <p style="font-size:20px; color:black;">How is this image related to you? <br>- Whales need to consume more in order for them to survive. For example, they need to eat more to sustain their bodies or their needs. And I find it similar to my current mindset because I want to dream BIG and work harder. More, and I don't want to be content with a small dream or life. I want to keep on pushing more and more in order to have my own dream life.</p>
                   <br>
-                  <p style="font-size: 20px;">How did you express your creativity in this activity? <br>-I expressed my creativity through maximizing my materials or by using just a pencil and 1 color.</p>
-                  <p style="font-size: 20px;">How did you express your imagination in this activity? <br>-I expressed my imagination through I expressed my creativity through pointing out the shape of the whale in the scribble.</p>
-                  <p style="font-size: 20px;">September 06, 2022 <br> 03:57pm</p>
+                  <p style="font-size:20px; color:black;">How did you express your creativity in this activity? <br>-I expressed my creativity through maximizing my materials or by using just a pencil and 1 color.</p>
+                  <p style="font-size:20px; color:black;">How did you express your imagination in this activity? <br>-I expressed my imagination through I expressed my creativity through pointing out the shape of the whale in the scribble.</p>
+                  <p style="font-size:20px; color:black;">September 06, 2022 <br> 03:57pm</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-12 col-xs-12">
+            <div data-aos="fade-right">
+              <div class="art_container">
+                <img src="https://cdn.britannica.com/78/43678-050-F4DC8D93/Starry-Night-canvas-Vincent-van-Gogh-New-1889.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div data-aos="fade-left">
+                <div class="art_desc_container">
+                  <h6 class="art_title">Starry Night</h6>
+                  <p style="font-size:20px; color:black;">What is the artwork all about and who is the artist? <br>
+                    <span style="">- VINCENT VAN GOGH: STARRY NIGHT <br>
+                    - Van Gogh is in an asylum and has hallucinations and panic attacks . With only his window as his only view, he drew the starry night.
+                    We're seeing his town from his own perspective. After thirteen months, he committed suicide, leaving us with his magnificent works. </span></p>
+                  <br>
+                  <p style="font-size:20px; color:black;">How has this artwork connected to you personally? <br>
+                    <span>- By learning that, we often see different perspectives in each aspect of life.
+                      But that doesn't mean it's right or wrong. There is always beauty behind our work.
+                      We just need faith in ourselves.</span>
+                  <br>
+                  <p style="font-size:20px; color:black;">Is this artwork beautiful or aesthetic, or both? Why? <br>
+                  <span>Both.<br>Because it is beauty in a way that everyone can appreciate, no matter what their ages are. aesthetic in a way that Van Gogh thought he could only appreciate his work.</span></p>
+                  <p style="font-size:20px; color:black;">September 16, 2022 ||  08:55am</p>
                 </div>
               </div>
           </div>
@@ -134,7 +155,9 @@
     </footer>
 
   </body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JavaScript Bundle with Popper -->
   <script>
   AOS.init();
 </script>
