@@ -265,7 +265,7 @@ figure {
 /** * Text Selection */
 ::selection {
   color: #fff;
-  background-color: #d0f2ee;
+  background-color: black;
   text-shadow: none;
 }
 /** * Body */
