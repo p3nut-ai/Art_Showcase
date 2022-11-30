@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../index.css">
+    <style media="screen">
+    .wrapper {
+ min-height: 100vh;
+ font-family: 'Roboto Slab', serif;
+ font-weight: 300;
+ color: #fff;
+ position: relative;
+}
+section {
+ height: 100vh;
+ font-size: 40px;
+ font-weight: 100;
+ background-color: #22a7f0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+section:nth-child(1) {
+ background: white;
+}
+section:nth-child(2) {
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Fronton_Cambodge_Mus%C3%A9e_Guimet_9972.jpg/800px-Fronton_Cambodge_Mus%C3%A9e_Guimet_9972.jpg');
+ background-size: contain;
+}
+section:nth-child(3) {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://upload.wikimedia.org/wikipedia/commons/7/75/COLLECTIE_TROPENMUSEUM_Prins_Panji_in_een_hof_met_drie_vrouwen._TMnr_2110-1.jpg');
+  background-size: contain;
+}
+section:nth-child(4) {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kerta_Gosa%2C_Ramayana_Scene%2C_Bali_1543.jpg/800px-Kerta_Gosa%2C_Ramayana_Scene%2C_Bali_1543.jpg');
+  background-size: contain;
+}
+
+
+.nav__wrapper {
+ position: fixed;
+ height: 100%;
+ padding: 30px;
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: flex-end;
+}
+.nav {
+ margin: 0 0 -18px 30px;
+}
+.nav__counter {
+ font-size: 24px;
+ transition: all 0.15s ease-out;
+}
+.nav__title {
+ font-size: 32px;
+ font-weight: 300;
+ margin: 0 0 0.25em;
+ width: 300px;
+ height: 0;
+ overflow: hidden;
+ opacity: 0;
+ transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+ font-weight: 100;
+ font-size: 18px;
+ font-size: 18px;
+ width: 427px;
+ height: 0;
+ overflow: hidden;
+ opacity: 0;
+ transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+ position: relative;
+ transition: all 0.3s ease-out;
+ margin-bottom: 1em;
+}
+.nav li:after {
+ content: '';
+ display: block;
+ border-left: 2px solid white;
+ border-top: 2px solid white;
+ height: 250px;
+ width: 20px;
+ position: absolute;
+ left: -30px;
+ top: 15px;
+}
+.nav li a {
+ display: block;
+ padding: 0;
+ color: #fff;
+ border: none !important;
+ transition: all 0.15s ease-out;
+}
+.nav li a:hover {
+ background-color: transparent;
+ padding-left: 1em;
+}
+.nav li a:focus {
+ background-color: transparent;
+}
+.nav li.active {
+ pointer-events: none;
+ padding-left: 1em;
+}
+.nav li.active:after {
+ width: 35px;
+ height: 400px;
+ top: 35px;
+}
+.nav li.active .nav__counter {
+ font-size: 48px;
+}
+.nav li.active .nav__title {
+ height: 40px;
+ opacity: 1;
+ overflow: visible;
+}
+.nav li.active .nav__body {
+ height: 65px;
+ opacity: 1;
+ overflow: visible;
+}
+
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar-example">
+
+
+  <div class="wrapper" >
+
+    <nav class="nav__wrapper" id="navbar-example">
+      <ul class="nav">
+
+        <li role="presentation" class="active">
+          <a href="#section1">
+            <span class="nav__counter">01</span>
+            <h3 class="nav__title" style="font-size:15px; background-color:black;">Title: Stone carving at Banteay Srei (Angkor)</h3>
+            <p class="nav__body"><strong>Year:  around the 1st century CE</strong></p>
+            <p class="nav__body"><strong>Artist:</strong></p>
+            <p class="nav__body"><strong>Media/Medium:Stone </strong></p>
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a href="#section2">
+            <span class="nav__counter">02</span>
+            <h3 class="nav__title" style="font-size: 22px !important;">Title: Balinese painting </h3>
+            <p class="nav__body" style="padding-top: 39px !important;"><strong>Year:  8th century to the 10th century</strong></p>
+            <p class="nav__body"><strong>Artist: rince Panji</strong></p>
+            <p class="nav__body"><strong>Media/Medium: Painting </strong></p>
+          </a>
+        </li>
+
+        <li role="presentation">
+          <a href="#section3">
+            <span class="nav__counter">03</span>
+            <h3 class="nav__title" style="font-size: 15px !important; background-color:black;">Title:  scene from Kerta Gosha, depicting Rama versus Dasamukha (Ravana).</h3>
+            <p class="nav__body" style="padding-top: 39px !important;"><strong>Year: 20th century</strong></p>
+            <p class="nav__body"><strong>Artist:Ramayana</strong></p>
+            <p class="nav__body" style="padding-top:20px !important;"><strong>Media/Medium:Painting </strong></p>
+          </a>
+        </li>
+
+
+
+
+
+      </ul>
+    </nav>
+
+    <section class="section section1" id="section1">
+      CC:10 <br>Scroll down or click the numbers on the left.
+    </section>
+
+    <section class="section section2" id="section2">
+       Balinese painting
+    </section>
+
+    <section class="section section3" id="section3">
+      scene from Kerta Gosha
+    </section>
+
+
+
+
+
+  </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+
+</script>
+<script type="text/javascript">
+// SMOOTH SCROLLING SECTIONS
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+         if (target.length) {
+           $('html,body').animate({
+               scrollTop: target.offset().top
+          }, 1000);
+          return false;
+      }
+  }
+});
+</script>
+</html>
